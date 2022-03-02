@@ -64,7 +64,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <img src="../assets/images/0002.jpg">
+              <img src="../assets/images/0003.jpg">
             </div>
             <div class="col">
               <div class="circle">
@@ -113,7 +113,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <img src="../assets/images/0102.jpg">
+              <img src="../assets/images/0103.jpg">
             </div>
             <div class="col">
               <div class="circle">
