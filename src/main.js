@@ -12,10 +12,15 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faStar, faMagnifyingGlass, faLink, faHouseUser, faXmark, faPen, faRightFromBracket, faUserGear, faBan, faHeart, faMoneyCheckDollar, faImages, faListCheck, faIdCard, faGear, faEnvelope, faBell, faCheck, faCheckCircle, faInfoCircle, faExclamationTriangle, faExclamationCircle, faArrowUp, faAngleRight, faAngleLeft, faAngleDown, faEye, faEyeSlash, faCaretDown, faCaretUp, faUpload, faCircleQuestion } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import mixin from './mixin.js'
+import VueGtag from 'vue-gtag'
 
 library.add(faCircleQuestion, faCaretUp, faCaretDown, faStar, faMagnifyingGlass, faLink, faHouseUser, faXmark, faPen, faRightFromBracket, faUserGear, faBan, faHeart, faMoneyCheckDollar, faImages, faListCheck, faIdCard, faGear, faEnvelope, faBell, faCheck, faCheckCircle, faInfoCircle, faExclamationTriangle, faExclamationCircle,
   faArrowUp, faAngleRight, faAngleLeft, faAngleDown, faEye, faEyeSlash, faCaretDown, faCaretUp, faUpload)
 Vue.component('vue-fontawesome', FontAwesomeIcon)
+
+Vue.use(VueGtag, {
+  config: { id: 'G-GH41GLF8TY' }
+})
 
 Vue.use(Buefy, {
   defaultIconComponent: 'vue-fontawesome',
