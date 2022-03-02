@@ -1,0 +1,209 @@
+#about{
+  .about-row{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin: 30px 0 70px;
+    // border-top: 2px solid #F6446F;
+    // border-bottom: 2px solid #F6446F;
+    border: none;
+    .about-col{
+      width: 100%;
+      padding: 10px 100px;
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .circle{
+        width: 150px;
+        height: 150px;
+        background-color: #22AFA7;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        img{
+          width: 50px;
+          filter: invert(100%) sepia(5%) saturate(34%) hue-rotate(3deg) brightness(116%) contrast(100%);
+        }
+        .brush{
+          width: 80px;
+        }
+        .dollar{
+          width: 80px;
+        }
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+
+  .about-title{
+    text-align: center;
+    margin: 20px 0;
+    h1{
+      color: #F6446F;
+    }
+    h3{
+      color: #22AFA7;
+    }
+    .pink{
+      color: #FFAEC2;
+    }
+  }
+
+  .teaching{
+    width: 100%;
+    .row{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .col{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        img{
+          width: 100%;
+        }
+      }
+      .circle{
+        width: 70px;
+        height: 70px;
+        background-color: #FFAEC2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 10px 0;
+        p{
+          font-size: 24px;
+          color: white;
+        }
+      }
+      h1{
+        color: #22AFA7;
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      hr{
+        border: 1px solid #FFAEC2;
+      }
+    }
+  }
+
+  .about-user,
+  .about-illustrator{
+    margin-bottom: 70px;
+    .about-title{
+      margin-bottom: 40px;
+    }
+  }
+
+  .card-header{
+    padding: 5px;
+  }
+
+  .card-header-title{
+    color: #819CAB;
+  }
+
+  .card-content{
+    color: #144F70;
+  }
+
+  .card-header-icon{
+    .icon{
+      color: #22AFA7;
+      svg{
+        width: 15px;
+      }
+    }
+  }
+
+  .qa{
+    margin-bottom: 100px;
+  }
+
+  .contact{
+    .about-title{
+      p{
+        margin: 40px 0;
+      }
+    }
+  }
+
+  @include xxl{
+    .about{
+      margin-top: 60px;
+      margin-bottom: 150px;
+    }
+    .about-title{
+      margin-bottom: 50px;
+    }
+    .about-row{
+      padding: 0 100px;
+      flex-direction: row;
+      align-items: flex-start;
+      border-top: 2px solid #F6446F;
+      border-bottom: 2px solid #F6446F;
+      .about-col{
+        padding: 40px;
+      }
+    }
+
+    .teaching{
+      margin-top: 70px;
+      .row{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        &:nth-child(2){
+          flex-direction: row-reverse;
+          .col:nth-child(2){
+          }
+        }
+        .col{
+          width: 45%;
+          margin: 0;
+          .circle{
+            margin-bottom: 20px;
+          }
+          a{
+            color: #FFAEC2;
+            &:hover{
+              color: #F6446F;
+            }
+          }
+        }
+        .col:nth-child(2){
+          hr{
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+
+    .about-user{
+      margin-bottom: 200px;
+    }
+
+    .about-illustrator{
+      margin-bottom: 200px;
+      .row{
+        flex-direction: row-reverse;
+        &:nth-child(2){
+          flex-direction: row;
+        }
+      }
+    }
+
+    .qa{
+      margin-bottom: 200px;
+    }
+  }
+}

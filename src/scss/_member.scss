@@ -1,0 +1,214 @@
+#member{
+  min-height: calc(100vh - 400px);
+  .member-main{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    .member-headshot{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 20px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .member-info{
+      width: calc(100% - 120px);
+    }
+
+    .member-nickname{
+      color: #22AFA7;
+      font-size: 24px;
+    }
+
+    .member-websites{
+      width: 100%;
+      display: flex;
+      .member-website{
+        width: 25px;
+        margin-right: 8px;
+        a{
+          color: #819CAB;
+          transition: .2s;
+          &:hover{
+            color: #F6446F;
+            .svg{
+              filter: invert(36%) sepia(31%) saturate(2089%) hue-rotate(306deg) brightness(106%) contrast(101%);
+            }
+          }
+          .svg{
+            transition: .2s;
+            filter: invert(60%) sepia(26%) saturate(286%) hue-rotate(157deg) brightness(95%) contrast(89%);
+          }
+          .facebook{
+            width: 22px;
+          }
+        }
+      }
+    }
+
+    .member-self-introduction{
+      white-space: break-spaces;
+    }
+  }
+
+  .tabs{
+    margin-bottom: 20px;
+  }
+
+  .tabs ul li.is-active {
+    background-color: #F6446F;
+  }
+
+  .cover-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    .member-cover{
+      position: relative;
+      max-width: 100%;
+      height: 100%;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      &:hover{
+        .member-overlay{
+          opacity: 100;
+        }
+      }
+      .member-overlay{
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: #F6446F, $alpha: 0.5);
+        transition: .5s;
+        .member-cover-illustrator{
+          color: white;
+          border: 2px solid white;
+          padding: 10px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+
+  .small-tabs{
+    margin-top: -10px;
+    padding: 0 15px;
+    .tabs.is-small{
+      .is-active{
+        background-color: #22AFA7;
+        border-radius: 12px;
+      }
+    }
+    .row{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .col{
+      width: 100%;
+      margin-right: 0;
+      display: flex;
+      flex-direction: column;
+      &:nth-child(1){
+        align-items: center;
+      }
+      .yume-name{
+        margin: 10px 0;
+        color: #F6446F;
+      }
+      .yuem-info{
+        white-space: pre-wrap;
+      }
+    }
+  }
+
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    z-index: -1;
+    opacity: 0;
+  }
+  .lightbox:target {
+    z-index: 100;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .review-container{
+    width: 100%;
+    .review-card{
+      width: 100%;
+      display: flex;
+      box-shadow: 0 5px 5px rgba($color: #144F71, $alpha: 0.2);
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 20px;
+      .order-headshot{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+      }
+      .order-name{
+        h1{
+          font-size: 20px;
+        }
+        .order-nickname{
+          color: #22AFA7;
+          margin-bottom: 5px;
+          .tag{
+            background-color: #22AFA7;
+            border-radius: 10px;
+            color: white;
+            margin-right: 10px;
+          }
+        }
+      }
+      .order-item{
+        white-space: pre-wrap;
+      }
+
+      .order-date{
+        color: #819CAB;
+      }
+    }
+  }
+  @include lg{
+    .small-tabs{
+      .row{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+
+      }
+      .col{
+        width: 47%;
+      }
+    }
+  }
+}

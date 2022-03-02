@@ -1,0 +1,57 @@
+/* home 首頁 -------------------------------------------------------------------------- */ 
+// carousel 輪播圖
+.carousel .carousel-indicator{
+  &.is-inside.is-bottom{
+    bottom: 10px;
+  }
+  .indicator-item{
+    .indicator-style.is-dots{
+      background: white;
+      border: 1px solid #F6446F;
+      height: 12px;
+      width: 12px;
+    }
+    &.is-active{
+      .indicator-style.is-dots{
+        background: #F6446F;
+        border: 1px solid #F6446F;
+      }
+    }
+  }
+}
+
+.home-container {
+  margin-top: 50px;
+}
+
+.home-title{
+  text-align: center;
+  margin-bottom: 20px;
+  h1{
+    color: #F6446F;
+  }
+  h3{
+    color: #22AFA7;
+    font-weight: 500;
+  }
+}
+
+@include lg{
+  #carousel{
+    .carousel{
+      max-height: 860px;
+      .carousel-items{
+        max-height: 860px;
+        .carousel-item{
+          max-height: 860px;
+        }
+      }
+    }
+  }
+}
+
+@include xl{
+  .home-container {
+    margin-top: 120px;
+  }
+}

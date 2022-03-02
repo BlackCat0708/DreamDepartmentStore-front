@@ -1,0 +1,105 @@
+#admin{
+  min-height: calc(100vh - 400px);
+  .management-left{
+    background-color: #144F71;
+    a{
+      &:hover{
+        color: #144F71;
+      }
+      &:focus{
+        color: #144F71;
+      }
+      &:active{
+        color: #144F71;
+      }
+    }
+    .menu-logout{
+      &:hover{
+        color: #144F71;
+      }
+      &:focus{
+        color: #144F71;
+      }
+      &:active{
+        color: #144F71;
+      }
+    }
+  }
+
+  .management-title{
+    color: #144F71;
+    margin-bottom: 30px;
+  }
+
+  .table{
+    color: #144F71;
+    .button{
+      height: 100%;
+    }
+
+    .button.delete{
+      position: relative;
+      height: 30px;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  td::before{
+    color: #819CAB;
+  }
+
+  .is-relative{
+    color: #819CAB;
+  }
+
+  .modal-items{
+    padding: 20px 20px 40px;
+    .modal-item{
+      margin-bottom: 20px;
+      h3{
+        color: #22AFA7;
+        margin-bottom: 5px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .link{
+    display: flex;
+    .user-headshot{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 5px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .search{
+    margin-bottom: 50px;
+  }
+
+  .field.has-addons{
+    justify-content: center;
+  }
+  .icon.is-left{
+    svg{
+      width: 20px;
+    }
+  }
+  .control:last-child:not(:only-child) .button {
+    border-radius: 0 4px 4px 0;
+  }
+
+  @include md{
+    tr{
+      box-shadow: none;
+    }
+  }
+}

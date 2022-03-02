@@ -1,0 +1,18 @@
+#illustratorlist {
+  min-height: calc(100vh - 400px);
+  .field.has-addons{
+    justify-content: center;
+  }
+  .icon.is-left{
+    svg{
+      width: 20px;
+    }
+  }
+  .control:last-child:not(:only-child) .button {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .search{
+    margin-bottom: 50px;
+  }
+}
